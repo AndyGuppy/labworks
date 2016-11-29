@@ -23,8 +23,8 @@ class Library
     end
   end
 
-  def add_book(book)
-    @book = book
+  def add_book(book={})
+    @book.merge!(book)
   end
 
 

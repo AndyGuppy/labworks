@@ -67,9 +67,9 @@ def test_can_add_book
     }
     
     )
-  library.add_book("Hitch hikers Guide to Ruby"=> {
+  library.add_book({"Hitch hikers Guide to Ruby"=> {
         :student_name => "",
-        :date => ""})
+        :date => ""}})
 
   actual = library.find_book("Hitch hikers Guide to Ruby")
   expected = ","
